@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="login-container">
+        <form id="login-form" class="login-form">
+            <h2>Login</h2>
+            <div class="form-control">
+                <label for="username">Username</label>&nbsp;&nbsp;&nbsp;
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>&nbsp;&nbsp;&nbsp;
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="sign-up">
+                <p>Don't have an account? <a href="file:///C:/Users/RENU/Desktop/git1/signup.html">Sign up here</a></p>
+            </div>
+        </form>
+        <div id="error-msg" class="error-msg"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60dvw;
+    background-image: url("https://img.freepik.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?t=st=1721573295~exp=1721576895~hmac=3163b7d54c6882b40a34c034492d15e818d85091241741c0c974aa59721c491d&w=996");
+    background-size: cover;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #f7fdfd ;
+    box-shadow: 0 0 10px rgba(245, 250, 244, 0.968);
+}
+
+.login-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+.form-control input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0e0b0b;
+    border-radius: 6px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+}
+
+button[type="submit"] {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #2875d2;
+    color: rgb(6, 6, 6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #11e972;
+}
+
+.error-msg {
+    margin-top: 10px;
+    color: #4a91dc(225 17% 14%);
+    text-align: center;
+}
+
+.sign-up {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sign-up a {
+    color: #007bff;
+    text-decoration:solid;
+}
+
+.sign-up a:hover {
+    text-decoration:underline;
+}
+</style>
+<script>
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Here you can implement your login logic (e.g., validate credentials)
+    if (username === 'user' && password === 'password') {
+        // Redirect or show success message
+        alert('Login successful!');
+    } else {
+        // Show error message
+        var errorMsg = document.getElementById('error-msg');
+        errorMsg.textContent = 'Invalid username or password. Please try again.';
+    }
+});
+</script>
+
+
