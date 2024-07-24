@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Reviews</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<div class="container">
+    <h1>Travel Reviews</h1>
+    <div class="reviews">
+        <div class="review">
+            <h2>John Doe</h2>
+            <p class="date">January 15, 2024</p>
+            <p class="rating">Rating: 5 stars</p>
+            <p class="comment">"Had an amazing experience! The destination was breathtaking and the arrangements were perfect."</p>
+        </div>
+        <div class="review">
+            <h2>Jane Smith</h2>
+            <p class="date">February 3, 2024</p>
+            <p class="rating">Rating: 4 stars</p>
+            <p class="comment">"Overall, a great trip. There were a few hiccups with the hotel booking, but the tour guide made up for it."</p>
+        </div>
+        <!-- Additional reviews can be added here -->
+    </div>
+    
+    <h2>Add Your Review</h2>
+    <form action="#" method="POST" class="review-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comment">Review:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
+</body>
+<body>
+    <div>
+        <center>
+              <a href="file:///C:/Users/RENU/Desktop/git1/Home.html">Go Home</a>
+        </center>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/premium-photo/light-blue-plain-vertical-background-with-space-text-image_7954-37168.jpg?w=360"); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviews {
+    margin-bottom: 20px;
+}
+
+.review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.review h2 {
+    margin-bottom: 5px;
+}
+
+.review .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.review .rating {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.review .comment {
+    margin-bottom: 10px;
+}
+
+.review-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+</style>
